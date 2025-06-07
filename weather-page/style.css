@@ -1,0 +1,116 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+body {
+  background: #4d9bbf;
+  background: linear-gradient(
+    11deg,
+    rgba(77, 155, 191, 1) 0%,
+    rgba(185, 218, 235, 1) 50%,
+    rgba(237, 237, 237, 1) 100%
+  );
+}
+main.container {
+  border: 3px solid rgb(55, 130, 234);
+  border-radius: 7px;
+  max-width: 850px;
+  min-height: 600px;
+  background: rgb(255, 255, 255);
+  margin: 95px auto;
+}
+.search-bar {
+  width: 75%;
+  height: 50px;
+  border-radius: 5px;
+  outline: none;
+  margin: 20px 10px 20px 25px;
+  padding: 10px;
+  border: 3px solid rgb(55, 130, 234);
+  background-color: rgb(235, 244, 247);
+}
+.btn-search {
+  width: 17%;
+  height: 50px;
+  background-color: rgb(55, 130, 234);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+.city-info {
+  margin: 0 10px 20px 25px;
+  width: 200px;
+  height: 80px;
+  color: rgb(55, 130, 234);
+  font-size: 18px;
+}
+.city-name {
+  font-size: 40px;
+  color: rgb(55, 130, 234);
+}
+.icon-rainy {
+  width: 100px;
+  margin: 0 10px 20px 25px;
+}
+.weather-degree {
+  font-size: 105px;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+.weather-degree::after {
+  content: "°C";
+  vertical-align: 45px;
+  font-size: 20px;
+}
+.weather-info {
+  display: flex;
+  height: 250px;
+  align-items: center; /* برای تراز عمودی عناصر */
+}
+.humidity-percentage {
+  width: 250px;
+  height: 50px;
+  margin-left: 120px;
+  font-size: 20px;
+  color: rgb(55, 130, 234);
+}
+.umbrella {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 30px;
+}
+.week-days {
+  margin-top: 20px;
+  font-size: 20px;
+  display: flex;
+  gap: 105px;
+  justify-content: center;
+  align-items: center;
+  filter: opacity(65%);
+}
+.image-weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  filter: opacity(80%);
+}
+.image-weather img {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+}
+.week-days-temperature {
+  font-size: 20px;
+  display: flex;
+  gap: 65px;
+  justify-content: center;
+  align-items: center;
+  filter: opacity(65%);
+}
